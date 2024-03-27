@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-Figtree font-minor text-paragraph
+}
+
+.box-shadow {
+    box-shadow: 16px 16px 1px hsl(0, 0%, 7%);
+}

@@ -1,34 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="src/styles/output.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Atribuition 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  Learning
+  <div class="bg-yellow h-screen flex items-center content-center justify-center">
+    <div class="bg-white p-5 box-shadow h-box w-box rounded-2xl outline outline-1 m-5">
+      <img class="rounded-lg" src="src/images/illustration-article.svg" alt="">
 
-  Published 21 Dec 2023
+      <div class="flex flex-col">
+        <span class="font-major bg-yellow flex mr-auto my-5 px-2 py-1 rounded">Learning</span>
+        <span class="text-sm">Published 21 Dec 2023</span>
+        <h1 class="font-major text-xl hover:text-yellow transition-all cursor-pointer py-6">HTML & CSS foundations</h1>
+        <p class="text-grey">These languages are the backbone of every website, defining structure, content, and
+          presentation.</p>
+        <div class="flex flex-row items-center gap-3 py-4">
+          <img class="size-8 " src="src/images/image-avatar.webp" alt="" srcset="">
+          <h2 class="font-major text-sm">Greg Hooper</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/raphaeleliass" target="_blank">Raphael Elias</a>.
   </div>
 </body>
+
 </html>
